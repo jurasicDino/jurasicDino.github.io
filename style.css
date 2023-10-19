@@ -1,0 +1,136 @@
+/* mengimport font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+/* setting up the body Element */
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+/* scrolling */
+overflow-x: hidden;
+
+/* jika ingin menggunakan warna sebagai background element */
+/* gunakan properti background-color */
+background-color: white;
+
+/* jika ingin menggunakan gambar sebagai background element */
+/* gunakan properti background-image */
+
+background-image: url(asset/wlpp.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+
+
+/* posisi element: tengah */
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.img-container img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* mengatur gaya container */
+.container {
+    /* mengatur lebar container */
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+    /* mengatur tata letak element dengan Flexbox */
+    /* posisi element: tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* set the profile image */
+.img-container img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #4c68d7;
+}
+
+/* set the title and description  */
+.title-container {
+    /* tata letak */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    /* warna teks heading dan deskripsi */
+    color: gray;
+}
+
+/* set the Link item Element */
+.link-item {
+    width: 100%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+
+    /* text color and background color */
+    color: #626464;
+    text-decoration: none;
+    background-color: #F9F4F2;
+    
+    /* tata letak */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* set the icons */
+.icon {
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.link-item p {
+    margin-right: 60px;
+}
+
+/* apa yang terjadi jika mouse berada di atas element */
+/* itulah yang disebut dengan sifat hover */
+.link-item:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 1.3s;
+    transform: scale(1.02);
+
+    background-color: white;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 whitesmoke;
+    color: rgb(201, 197, 197);
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .4s ease-in-out, box-shadow .7s ease-in-out;
+  }
+  a:hover {
+    color: #ffffff; 
+    box-shadow: inset 700px 0 0 0 rgb(204, 205, 206);;
+  }
+  
+  /* Presentational styles */
+  a {
+    color: rgb(206, 211, 208);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.0;
+    text-decoration: none;
+  }
+  
+  body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
